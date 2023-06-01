@@ -22,10 +22,19 @@ The goal of this project is to create a game in 3D using raycasting for alx Fina
 * Make the script executable by running the following command
 * Run the installation script with root privileges using the following command
 # Play the game
+* clone the [GitHub repository](https://github.com/ukcharlies/3D_Maze)
+* Compile all .c files in the maze directory using:
+gcc -Wall -Werror -Wextra -pedantic ./src/*.c -lm $(sdl2-config --cflags --libs) -lSDL_image -o maze
+* Execute ./mazea and play the game.
+* Use up and down arrow keys to move forward and backward (keys w and s serve the same function)
+* Use right and left arrow keys to turn the camera arround (keys d and a serve the same function)
+
 # Controls
-W or up arrow key - Moving forward S or down arrow - Moving backwards left arrow key - to rotate the player in counter-clockwise direction right arrow key - to rotate the player in the clockwise direction
+W or up arrow key - Moving forward S or down arrow - Moving backwards left arrow key - to rotate the player in a counter-clockwise direction right arrow key - to rotate the player in the clockwise direction
 # Flow Chart
 ![flowchart](https://github.com/ukcharlies/3D_Maze/assets/111245934/586b7ee6-aa9a-4df7-9c14-01f2f3bed000)
 # Project Demo
+![project_demo](https://github.com/ukcharlies/3D_Maze/assets/111245934/3936f284-11b2-4bb4-86a8-10b6c05422ba)
+
 # Author 
 * Ukachi Charles (https://github.com/ukcharlies)
