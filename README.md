@@ -37,5 +37,5 @@ W or up arrow key - Moving forward S or down arrow - Moving backwards left arrow
 ![project_demo](https://github.com/ukcharlies/3D_Maze/assets/111245934/3936f284-11b2-4bb4-86a8-10b6c05422ba)
 
 # Author 
-* Ukachi Charles [github](https://github.com/ukcharlies)[linkedln](https://www.linkedin.com/in/chuka-ukachi-70b525262)
+* Ukachi Charles [github](https://github.com/ukcharlies) [linkedln](https://www.linkedin.com/in/chuka-ukachi-70b525262)
 
