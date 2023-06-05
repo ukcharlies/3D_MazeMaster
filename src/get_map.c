@@ -102,40 +102,7 @@ int **get_altitude(char **argv)
 	if (fd == -1)
 	{
 		fprintf(stderr, "Error in opening a file");
-		return */
-char **str_split(char *str, char *del)
-{
-	char **tokens;
-	char *token, *str2;
-	int i = 0;
-	int tokens_size = 2;
-
-	/** allocate memory for the tokens **/
-	tokens = malloc(sizeof(char *) * (tokens_size + 1));
-	if (tokens == NULL)
 		return (NULL);
-	/** duplicate the given string **/
-	str2 = _strdup(str);
-	/** split the string based on the delimeter character **/
-	token = strtok(str2, del);
-	tokens_size++;
-	/** upto the end of the string **/
-	while (token)
-	{
-		tokens[i] = _strdup(token);
-		tokens = realloc(tokens, sizeof(char *) * tokens_size);
-		token = strtok(NULL, del);
-		i++;
-		tokens_size++;
-	}
-	/** add the terminate character of the string **/
-	tokens[i] = '\0';
-	if (token)
-		free(token);
-	if (str2)
-		free(str2);
-	return (tokens);
-}(NULL);
 	}
 	/** read the file **/
 	read(fd, buf, 1023);

@@ -160,3 +160,4 @@ void key_up(SDL_Event ev)
 	if (ev.key.keysym.sym == SDLK_ESCAPE)
 		btnkeys.x = 0;
 }
+

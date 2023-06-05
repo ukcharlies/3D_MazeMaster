@@ -89,39 +89,7 @@ typedef struct enemy_s
 	char *path;
 } enemy_t;
 
-extern enemy_t e;
-void vertical_collision(float ray_a, float *vd, float *vx, float *vy, int *v);
-float find_distance(float ax, float ay, float bx, float by);
-
-/** draw2 **/
-void add_weapon(SDL_Instance ins);
-void add_enemy(SDL_Instance ins);
-float find_viewdistance(void);
-void draw_sprite_map(SDL_Instance ins);
-void sort_sprite(int *sprite, double *spr_dis, int n);
-
-/** texture **/
-float get_texture(int idx);
-
-/** map **/
-void setmap_value(int mx, int my, int val);
-int getmap_value(int x, int y, int mp);
-void free_numbers(int **numbers);
-void make_map(char **argv);
-
-/** get_map **/
-int _atoi(char *s);
-char *_strdup(char *str);
-int _length(char *str);
-int **get_altitude(char **argv);
-char **str_split(char *str, char *del);
-
-/** free_mem **/
-void free_grid(SDL_Point ***grid);
-void free_tokens(char **tokens);
-void free_cols(char ***cols);
-void free_numbers(int **numbers);
-#endifnemy;
+extern enemy_t enemy;
 extern float buff[num_rays];
 
 /** main.c **/
@@ -150,7 +118,7 @@ void draw_roof(SDL_Instance ins, float ln_off, int n, float line, float ra);
 /** cast **/
 void ray_cast(SDL_Instance ins);
 int hit_wall(float rx, float ry);
-void horizontal_collision(float ray_a, float *d, float *hx, float *hy, int *h)
+void horizontal_collision(float ray_a, float *d, float *hx, float *hy, int *h);
 void vertical_collision(float ray_a, float *vd, float *vx, float *vy, int *v);
 float find_distance(float ax, float ay, float bx, float by);
 
